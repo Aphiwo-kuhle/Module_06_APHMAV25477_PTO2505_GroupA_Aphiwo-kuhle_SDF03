@@ -9,10 +9,17 @@
 </head>
 <body>
     
-
-
-
 <header>
+	<input type="checkbox" id="toggle-settings" hidden>
+<label for="toggle-settings" class="btn profile-settings-btn" aria-label="profile settings">
+  <i class="fa fa-cog" aria-hidden="true"></i>
+</label>
+
+<div class="settings-panel">
+  <p>Settings Panel</p>
+  <!-- add more content here -->
+</div>
+
 
 	<div class="container">
 
@@ -25,13 +32,16 @@
 			</div>
 
 			<div class="profile-user-settings">
-
 				<h1 class="profile-user-name">codespace_pets</h1>
-
 				<button class="btn profile-edit-btn">Edit Profile</button>
+                <button class="btn profile-settings-btn" aria-label="profile settings">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+         <!-- Use a span or script tag for storing data -->
+                <span class="json" style="display:none;">{}</span>
+                </button>
+			</div>
 
-				<button class="btn profile-settings-btn" aria-label="profile settings"><i class="fa fa-cog" aria-hidden="true"></i></button>
-
+					
 			</div>
 
 			<div class="profile-stats">
@@ -72,7 +82,7 @@
 
 					<ul>
 						<li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 56</li>
-						<li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> 2</li>
+						<li class="gallery-item-comments"><span class="visually-hidden">Comments</span><i class="fa fa-comment" aria-hidden="true"></i> 2</li>
 					</ul>
 
 				</div>
