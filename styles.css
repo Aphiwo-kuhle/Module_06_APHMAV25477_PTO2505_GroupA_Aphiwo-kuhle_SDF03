@@ -3,38 +3,46 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
   background-color: #fafafa;
   color: #262626;
 }
+
 img {
   width: 100%;
   display: block;
 }
+
 .container {
   width: 90%;
   max-width: 935px;
   margin: auto;
 }
+
 .profile {
   display: flex;
   align-items: center;
   padding: 2rem 0;
   flex-wrap: wrap;
 }
+
 .profile-image {
   flex: 1 1 150px;
   max-width: 150px;
 }
+
 .profile-user-settings {
   flex: 2 1 300px;
   margin-left: 2rem;
 }
+
 .profile-user-name {
   font-size: 2rem;
   font-weight: bold;
 }
+
 .btn {
   background: none;
   border: 1px solid #dbdbdb;
@@ -42,41 +50,38 @@ img {
   margin-right: 1rem;
   cursor: pointer;
 }
+
 .btn:hover {
   background-color: #efefef;
 }
+
 .profile-stats ul {
   display: flex;
   gap: 2rem;
   margin-top: 1rem;
 }
+
 .profile-bio {
   margin-top: 1rem;
 }
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 1rem;
   margin-top: 2rem;
 }
+
 .gallery-item {
   position: relative;
   cursor: pointer;
 }
+
 .gallery-image {
   height: 100%;
   object-fit: cover;
 }
-.gallery-item-info {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0,0,0,0.5);
-  color: white;
-  width: 100%;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: space-between;
-}
+
 .gallery-item-type {
   position: absolute;
   top: 0.5rem;
@@ -85,6 +90,7 @@ img {
   color: white;
   padding: 0.2rem 0.5rem;
 }
+
 .loader {
   margin: 3rem auto;
   width: 50px;
@@ -94,30 +100,30 @@ img {
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
   }
 }
+
 @media screen and (max-width: 768px) {
   .profile {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .profile-user-settings {
     margin-left: 0;
     margin-top: 1rem;
   }
+
   .profile-stats ul {
     flex-direction: column;
     gap: 0.5rem;
   }
 }
-.gallery-item:hover .gallery-item-info {
-  background: rgba(0,0,0,0.7);
-}
+
 .gallery-item:hover .gallery-image {
   opacity: 0.9;
 }
-
- 
